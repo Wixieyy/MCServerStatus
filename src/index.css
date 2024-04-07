@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 98vh;
+    text-align: center;
+}
+#title-h3 {
+    font-weight: lighter;
+}
