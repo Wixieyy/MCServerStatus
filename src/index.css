@@ -1,10 +1,44 @@
 body {
-    display: flex;
-    /*align-items: center;*/
+    /*display: flex;*/
     justify-content: center;
     height: 98vh;
     text-align: center;
+    background-color: blue;
 }
+
+header {
+    background-color: red;
+}
+
+.nav-logo {
+    background-color: darkorange;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 #title-h3 {
     font-weight: lighter;
 }
