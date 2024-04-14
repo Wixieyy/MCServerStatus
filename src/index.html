@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <title>MineCSS</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/68cdd8e514.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="../dest/index.js"></script>
 </head>
 
 <header>
   <div class="navbar">
     <div class="nav-logo">
-      <a href="#">
-        <img src="img/CTableLogo.png" alt="MineCSS logo" width="40px">
-        <h1>MineCSS</h1>
+      <a href="#" class="nav-logo">
+        <img src="img/lectern.png" alt="MineCSS logo" width="45px">
+      </a>
+        <h1 id="logo-bar">|</h1>
+      <a href="#" class="nav-text">
+        <h1>MCSS</h1>
       </a>
     </div>
+    <div class="nav-buttons">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">API</a></li>
       <li><a href="#">About</a></li>
     </ul>
+    </div>
+    <div class="social-buttons">
+      <a id="github" href="https://github.com/Wixieyy" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+      <a id="stackoverflow" href="https://stackoverflow.com/users/23271000/wix" target="_blank"><i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+      <a id="discord" href="https://discord.com/users/:137275332607606784" title="@wixieyy" target="_blank"><i class="fa-brands fa-discord fa-2x"></i></a>
+      <a id="mail" href="mailto:wixieyy@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+    </div>
   </div>
+  <hr id="nav-lower-bar">
 </header>
 <body>
   <div class="body-div">
     <h1 id="title-h1">Minecraft Server Status Checker</h1>
-    <h3 id="title-h3">Input the IP of the server to check its status.</h3>
-    <p id="p-text">input
-    <input type="text" id="input-box">
-      <button type="submit" onclick="fetchData()">submit</button>
-    </p>
+    <h3 id="title-h3">Check the status of any Minecraft server</h3>
+    <button id="mcversion" onclick="changeVersion()">Java Edition</button>
+    <input type="text" id="input-box" placeholder="Enter server address eg. hypixel.net">
+      <button class="submit-button" type="submit" onclick="fetchData()">Submit</button>
       <h1 id="result-text"></h1>
   </div>
 </body>

@@ -26,3 +26,14 @@ async function fetchData() {
         console.error(error)
     }
 }
+
+function changeVersion() {
+    const button = document.getElementById('mcversion') as HTMLInputElement
+
+    if (button.textContent === "Java Edition") {
+        button.textContent = "Bedrock Edition"
+    }
+    else {
+        button.textContent = "Java Edition"
+    }
+}

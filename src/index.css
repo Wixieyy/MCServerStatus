@@ -1,44 +1,176 @@
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+* {
+    font-family: Merriweather,sans-serif;
+}
 body {
-    /*display: flex;*/
     justify-content: center;
     height: 98vh;
     text-align: center;
-    background-color: blue;
+    background-color: rgba(18, 18, 18, 0.95);
+    flex-direction: row;
+    margin: 0;
 }
 
 header {
-    background-color: red;
+    background-color: rgb(23, 23, 23);
 }
 
-.nav-logo {
-    background-color: darkorange;
+.nav-logo, .nav-text {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
-    height: 100px;
+    height: 6vh;
+    flex-direction: row;
+}
+
+.navbar img {
+    margin-right: 10px;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .navbar ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1.5em;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 0.5vw;
 }
 
+.nav-buttons {
+    padding-left: 5%;
+}
+
+.social-buttons a {
+    font-size: 15px;
+    margin-right: 0.5vw;
+}
+
+.fa-brands.fa-discord.fa-2x {
+    color: #7289da;
+}
+.fa-brands.fa-github.fa-2x, .fa-solid.fa-envelope.fa-2x {
+    color: #eaeaea;
+}
+.fa-brands.fa-stack-overflow.fa-2x {
+    color: #F47F24;
+}
+
+.social-buttons {
+    margin-left: auto;
+}
+
+#nav-lower-bar {
+    border-color: #797979;
+}
+
+
+
+
+
+#title-h1 {
+    font-size: max(24px,2vw);
+    color: white;
+}
 #title-h3 {
     font-weight: lighter;
+    font-size: max(12px,1vw);
+    color: white;
 }
+
+#logo-bar {
+    font-size: 3.5em;
+    font-weight: lighter;
+    transform: translate(-0.5vw);
+    margin: 0;
+    user-select: none;
+    color: white;
+}
+
+.body-div {
+    height: auto;
+    width: max(400px,70vw);
+    margin: auto;
+}
+
+#mcversion {
+    width: min(40vw,120px);
+    height: 3vh;
+    border-style: none;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+.submit-button {
+    width: max(6vw,70px);
+    height: 3.3vh;
+    border-style: none;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+#input-box{
+    width: min(40vw,500px);
+    height: 3vh;
+    border-style: none;
+    border-radius: 4px;
+    padding: 0 1vh;
+}
+
