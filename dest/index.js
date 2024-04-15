@@ -1,9 +1,11 @@
 "use strict";
-async function fetchData() {
-    const address = document.getElementById('input-box');
-    const result = document.getElementById('result-text');
+const address = document.getElementById('input-box');
+const result = document.getElementById('result-text');
+const button = document.getElementById('mcversion');
+async function fetchData(s) {
+    let input;
     try {
-        const input = 'https://api.mcsrvstat.us/3/' + address.value;
+        input = s + address.value;
         const response = await fetch(input);
         if (!response.ok) {
             throw new Error("Could not fetch data");
@@ -25,11 +27,12 @@ async function fetchData() {
     }
 }
 function changeVersion() {
-    const button = document.getElementById('mcversion');
     if (button.textContent === "Java Edition") {
         button.textContent = "Bedrock Edition";
+        fetchData('https://api.mcsrvstat.us/3/');
     }
     else {
         button.textContent = "Java Edition";
+        fetchData('https://api.mcsrvstat.us/bedrock/3/');
     }
 }
