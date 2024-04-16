@@ -1,7 +1,6 @@
 "use strict";
 const address = document.getElementById('input-box');
 const result = document.getElementById('result-text');
-const button = document.getElementById('mcversion');
 async function fetchData(s) {
     let input;
     try {
@@ -26,6 +25,7 @@ async function fetchData(s) {
         console.error(error);
     }
 }
+const button = document.getElementById('mcversion');
 function changeVersion() {
     if (button.textContent === "Java Edition") {
         button.textContent = "Bedrock Edition";

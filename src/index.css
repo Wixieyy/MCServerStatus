@@ -61,7 +61,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     padding-top: 5px;
 }
 
@@ -91,10 +91,14 @@ header {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: #b9b9b9;
     font-weight: bold;
     padding: 5px 10px;
     margin-right: 0.5vw;
+}
+
+.navbar ul li a:hover {
+    color: whitesmoke;
 }
 
 .nav-buttons {
@@ -109,12 +113,23 @@ header {
 }
 
 .fa-brands.fa-discord.fa-2x {
+    color: rgba(114, 137, 218, 0.8);
+}
+.fa-brands.fa-discord.fa-2x:hover {
     color: #7289da;
 }
+
 .fa-brands.fa-github.fa-2x, .fa-solid.fa-envelope.fa-2x {
+    color: rgba(234, 234, 234, 0.8);
+}
+.fa-brands.fa-github.fa-2x:hover, .fa-solid.fa-envelope.fa-2x:hover {
     color: #eaeaea;
 }
+
 .fa-brands.fa-stack-overflow.fa-2x {
+    color: rgba(244, 127, 36, 0.8);
+}
+.fa-brands.fa-stack-overflow.fa-2x:hover {
     color: #F47F24;
 }
 
@@ -136,12 +151,12 @@ header {
 }
 
 #logo-bar {
-    font-size: 2.75vw;
+    font-size: max(24px,2.75vw);
     font-weight: lighter;
     transform: translate(-0.5vw);
     margin: 0;
     user-select: none;
-    color: white;
+    color: whitesmoke;
     padding-top: 10px;
 }
 
@@ -149,12 +164,12 @@ header {
 
 #title-h1 {
     font-size: max(24px,2vw);
-    color: white;
+    color: whitesmoke;
 }
 #title-h3 {
     font-weight: lighter;
     font-size: max(12px,1vw);
-    color: white;
+    color: whitesmoke;
 }
 
 .body-div {
@@ -169,6 +184,8 @@ header {
     border-style: none;
     border-radius: 4px;
     margin-right: 2px;
+    background-color: #e1e1e1;
+    color: #3d3c3c;
 }
 
 .submit-button {
@@ -177,6 +194,8 @@ header {
     border-style: none;
     border-radius: 4px;
     margin-right: 2px;
+    color: #3d3c3c;
+    background-color: #e1e1e1;
 }
 
 #input-box{
@@ -185,10 +204,50 @@ header {
     border-style: none;
     border-radius: 4px;
     padding: 0 1vh;
+    background-color: #e1e1e1;
+    color: ghostwhite;
+}
+#input-box::placeholder {
+    color: #3d3c3c;
+}
+
+.result-div {
+    background-color: red;
+    width: max(75vw);
+    margin: auto;
+}
+.result-div h1 {
+    color: ghostwhite;
+}
+.result-div p {
+    display: flex;
+    margin: 0;
 }
 
 
-
-footer {
+.bottom-container footer {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
     background-color: rgb(23, 23, 23);
+    border-top: 2px solid #797979;
+    flex-direction: row;
+    padding: 0 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 98vw;
+}
+
+.bottom-container footer p {
+    font-size: max(9px,0.6vw);
+    color: whitesmoke;
+    user-select: none;
+}
+
+.bottom-container footer a {
+    text-decoration: none;
+    color: grey;
+}
+.bottom-container footer a:hover {
+    color: whitesmoke;
 }
