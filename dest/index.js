@@ -1,6 +1,13 @@
 "use strict";
 const address = document.getElementById('input-box');
-const result = document.getElementById('result-text');
+const resultDiv = document.getElementById('result-div');
+const serverName = document.getElementById('server-name');
+const serverMotd = document.getElementById('server-motd');
+const serverOnline = document.getElementById('server-online');
+const serverIp = document.getElementById('server-ip');
+const serverPort = document.getElementById('server-port');
+const serverVersion = document.getElementById('server-version');
+const serverPlayersMax = document.getElementById('server-version');
 async function fetchData(s) {
     let input;
     try {

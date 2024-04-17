@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://kit.fontawesome.com/68cdd8e514.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="../dest/index.js" defer></script>
 </head>
 
 <header>
@@ -46,16 +47,17 @@
       <button class="submit-button" type="submit" onclick="fetchData()">Submit</button>
       <h1 id="result-text"></h1>
   </div>
-<div class="result-div">
+<div id="result-div">
   <h1 id="result-title">Server info</h1>
-  <p id="server-name"></p>
-  <p id="server-motd"></p>
-  <p id="server-online"></p>
-  <p id="server-ip"></p>
-  <p id="server-port"></p>
-  <p id="server-version"></p>
-  <p id="server-players-max"></p>
-  <p id="server-"></p>
+  <div class="name">
+    <p id="server-name">name</p>
+  </div>
+  <p id="server-motd">motd</p>
+  <p id="server-online">online</p>
+  <p id="server-ip">ip</p>
+  <p id="server-port">port</p>
+  <p id="server-version">ver</p>
+  <p id="server-players-max">pmax</p>
 </div>
 </body>
 <div class="bottom-container">
@@ -64,5 +66,4 @@
   <p class="copyright">© 2024 Cube&#179Boxed. All rights reserved. </p>
 </footer>
 </div>
-<script src="../dest/index.js"></script>
 </html>

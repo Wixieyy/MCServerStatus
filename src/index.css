@@ -211,17 +211,20 @@ header {
     color: #3d3c3c;
 }
 
-.result-div {
+#result-div {
     background-color: red;
     width: max(75vw);
     margin: auto;
+    /*display: none;*/
 }
-.result-div h1 {
+#result-div h1 {
     color: ghostwhite;
 }
-.result-div p {
+#result-div p {
     display: flex;
-    margin: 0;
+    font-size: 1.2vw;
+    /*padding: 10px;*/
+    /*margin: 0;*/
 }
 
 
