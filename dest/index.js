@@ -26,10 +26,16 @@ async function fetchData() {
         const status = data.online;
         switch (status) {
             case true:
+                serverName.textContent = `Server name: ${data.motd.html[0]}`;
+                serverMotd.textContent = `Server MOTD: ${data.motd.html[1]}`;
+                serverOnline.textContent = 'Server status: Online';
                 serverIp.textContent = `Server IP: ${data.ip}`;
+                serverPort.textContent = `Server port: ${data.port}`;
+                serverVersion.textContent = `Server version: ${data.version}`;
+                serverPlayersMax.textContent = `Server players: ${data.players.online} - ${data.players.max}`;
                 break;
             case false:
-                serverOnline.textContent = 'The server is offline';
+                serverOnline.textContent = 'Server status: Offline';
                 break;
         }
     }
