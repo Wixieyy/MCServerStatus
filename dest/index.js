@@ -7,7 +7,7 @@ const serverOnline = document.getElementById('server-online');
 const serverIp = document.getElementById('server-ip');
 const serverPort = document.getElementById('server-port');
 const serverVersion = document.getElementById('server-version');
-const serverPlayersMax = document.getElementById('server-version');
+const serverPlayersMax = document.getElementById('server-players-max');
 async function fetchData() {
     let input = () => {
         if (button.textContent === 'Java Edition') {
@@ -26,8 +26,8 @@ async function fetchData() {
         const status = data.online;
         switch (status) {
             case true:
-                serverName.textContent = `Server name: ${data.motd.html[0]}`;
-                serverMotd.textContent = `Server MOTD: ${data.motd.html[1]}`;
+                serverName.textContent = `Server name: ${data.motd.clean[0]}`;
+                serverMotd.textContent = `Server MOTD: ${data.motd.clean[1]}`;
                 serverOnline.textContent = 'Server status: Online';
                 serverIp.textContent = `Server IP: ${data.ip}`;
                 serverPort.textContent = `Server port: ${data.port}`;
