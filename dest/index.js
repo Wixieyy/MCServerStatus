@@ -33,6 +33,7 @@ async function fetchData() {
                 serverPort.textContent = `Server port: ${data.port}`;
                 serverVersion.textContent = `Server version: ${data.version}`;
                 serverPlayersMax.textContent = `Server players: ${data.players.online} - ${data.players.max}`;
+                document.getElementById('result-div').style.display = 'block';
                 break;
             case false:
                 serverOnline.textContent = 'Server status: Offline';
